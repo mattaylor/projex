@@ -1,14 +1,15 @@
 
-const plan = require('./plan')
-const clup = require('./clup')
+const plan = require('./planner')
+const clup = require('./clickUp')
 
 async function main () {
   
   const tasks = await clup.getTasks()
   const teams = await clup.getTeams()
-  plan.roadmap(tasks, teams)
+  //console.log('BEFORE:', tasks)
+  plan.roadmap(tasks, teams, '10/19/2022')
   // console.log('TEAMS:', teams)
-  console.log('TASKS:', tasks)
+  console.log('AFTER :', tasks)
   await clup.setTasks(tasks)
 }
 

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mattaylor/projector/issues"
   },
-  "homepage": "https://github.com/mattaylor/projector#readme"
+  "homepage": "https://github.com/mattaylor/projector#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
